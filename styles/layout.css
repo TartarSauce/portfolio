@@ -1,3 +1,12 @@
+h1 {
+  /*max-width: 80%;*/
+}
+
+.tab-content {
+  padding: .1em .1em .1em 2em;
+  float: none;
+}
+
 /* Add styles so the filters lay out better on desktop. */
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
