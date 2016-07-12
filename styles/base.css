@@ -1,0 +1,14 @@
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  color: #313131;
+}
+
+.main-nav li {
+  list-style-type: none;
+}
+
+.main-nav {
+  line-height: 0.5;
+  font-size: 75%;
+}
