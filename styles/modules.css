@@ -1,26 +1,17 @@
-.main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
+.template {
+  display: none;
 }
 
-@media only screen and (min-width: 640px) {
-  .icon-menu {
-    display: none;
-  }
-  .main-nav {
-    padding: 0.1em;
-  }
-  .main-nav ul {
-    display: block;
-    padding: 0;
-    list-style: none;
-    clear: both;
-  }
-  .main-nav li {
-    display: inline;
-    border-bottom: none;
-    margin-left: 1em;
-  }
+footer {
+  font-size: 0.8em;
+    padding-top: 20px;
+    color: blue;
+}
 
+.line-break {
+  width: 80%;
+  height: 1px;
+  background-color: #cecece;
+  margin-top:15px;
+  margin-bottom: 10px;
 }

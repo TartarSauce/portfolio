@@ -1,21 +1,17 @@
 h1 {
-  /*max-width: 80%;*/
+    margin-bottom: -0.2em;
 }
 
-.tab-content {
-  padding: .1em .1em .1em 2em;
-  float: none;
+.main-nav {
+  margin-left: -2.2em;
+}
+  ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-/* Add styles so the filters lay out better on desktop. */
-@media only screen and (min-width: 640px) {
-  .heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
-  }
-
-  #filters li {
-    width: 20em;
-    display: inline;
-  }
+li {
+  display: inline;
 }
