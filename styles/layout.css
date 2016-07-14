@@ -5,13 +5,14 @@ h1 {
 .main-nav {
   margin-left: -2.2em;
 }
-  ul {
+
+.navbar {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-li {
+.navbar li {
   display: inline;
 }
