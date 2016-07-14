@@ -18,7 +18,9 @@
       <nav class="main-nav">
         <!-- Hamburger Menu -->
         <div class="icon-menu"></div>
-        <ul>
+        <ul class="navbar">
+          <li class="tab" data-content="work-items"><a href="#" class="icon-home"> Work Experience</a></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
           <li><a href="http://linkedin.com/in/umabangalore" target="_blank" class="icon-linkedin">LinkedIn</a></li>
           <li><a href="http://twitter.com/UmaBangalore" target="_blank" class="icon-twitter3">Twitter</a></li>
           <li><a href="https://github.com/TartarSauce" target="_blank" class="icon-github">Github</a></li>
@@ -26,8 +28,10 @@
       </nav>
     </header>
       <main>
+
+        <!-- work experience -->
         <div class="line-break"> </div>
-        <section id="work-items">
+        <section id="work-items" class="tab-content">
           <article class="template" data-category="cat">
             <header>
               <h3>Title</h3>
@@ -39,13 +43,30 @@
           <div class="line-break"> </div>
         </article>
       </section>
+
+      <!-- about me -->
+      <section id="about" class="tab-content">
+        <header>
+          <h1>Welcome to my Blog</h1>
+        </header>
+        <section>
+          <h3>Some of my interests:</h3>
+          <ul class="interests">
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging out with my family</li>
+          </ul>
+        </section>
+      </section>
+
     </main>
     <footer>
       &copy; Uma Bangalore | uma_bangalore@hotmail.com | 425.442.9602 (m)
     </footer>
     <!-- // TODO: Include any/all needed script tags -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/portfolio.js"></script>
+    <script src="scripts/portfolioView.js"></script>
   </body>
 </html>

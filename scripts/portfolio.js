@@ -22,7 +22,6 @@ Work.prototype.toHtml = function() {
   $newWork.find('section.work-body').append('<div class="work1"> ' + this.work1 + ' </div>');
   $newWork.find('div.work1').append('<div class="work2"> ' + this.work2 + ' </div>');
   $newWork.find('div.work2').append('<div class="work3"> ' + this.work3 + ' </div>');
-
   console.log($newWork);
   $newWork.removeClass('template');
   return $newWork;
