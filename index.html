@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <title>Uma Bangalore's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- template definition start -->
+    <script id="workitems-template" type="text/x-handlebars-template">
+      <article data-category="cat">
+        <header>
+          <h3>{{jobtitle}}</h3>
+          <h6>{{company}}</h6>
+          <time class="start-date">{{startDate}}</time>
+          <time class="end-date">{{endDate}}</time>
+        </header>
+        <section class="work-body"> </section>
+          {{{work1}}}
+          {{{work2}}}
+          {{{work3}}}
+        <div class="line-break"></div>
+      </article>
+    </script>
+    <!-- template definition end -->
+
+    <!-- all css links -->
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/base.css">
@@ -27,21 +46,12 @@
         </ul>
       </nav>
     </header>
-      <main>
 
+    <main>
         <!-- work experience -->
-        <div class="line-break"> </div>
-        <section id="work-items" class="tab-content">
-          <article class="template" data-category="cat">
-            <header>
-              <h3>Title</h3>
-              <h6>Company</h6>
-              <time class="start-date">Start Date</time>
-              <time class="end-date">End Date</time>
-            </header>
-          <section class="work-body"></section>
-          <div class="line-break"> </div>
-        </article>
+      <div class="line-break"> </div>
+      <section id="work-items" class="tab-content">
+        <!-- template item goes here -->
       </section>
 
       <!-- about me -->
@@ -58,13 +68,14 @@
           </ul>
         </section>
       </section>
-
     </main>
     <footer>
       &copy; Uma Bangalore | uma_bangalore@hotmail.com | 425.442.9602 (m)
     </footer>
-    <!-- // TODO: Include any/all needed script tags -->
+
+    <!-- all scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
