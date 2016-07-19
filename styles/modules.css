@@ -15,3 +15,20 @@ footer {
   margin-top:15px;
   margin-bottom: 10px;
 }
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    display: inline;
+  }
+}
