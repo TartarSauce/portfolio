@@ -16,3 +16,12 @@ h6 {
   font-size: 0.8em;
   color: green;
 }
+
+#about {
+  display: none;
+}
+
+.start-date, .end-date {
+  font-size: 0.8em;
+  color: blue;
+}
