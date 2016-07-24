@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Uma Bangalore's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- template definition start -->
+    <!-- work template definition start -->
     <script id="workitems-template" type="text/x-handlebars-template">
       <article data-category="cat">
         <header>
@@ -20,7 +20,13 @@
         <div class="line-break"></div>
       </article>
     </script>
-    <!-- template definition end -->
+    <!-- work template definition end -->
+
+    <!-- 'fun fact about this page' template definition start -->
+    <script id="randomfact-template" type="text/x-handlebars-template">
+      <p>random fact: appx. {{numWords}} words are on this page!</p>
+    </script>
+    <!-- 'fun fact about this page' template definition start -->
 
     <!-- all css links -->
     <link rel="stylesheet" href="vendor/styles/normalize.css">
@@ -39,7 +45,7 @@
         <!-- Hamburger Menu -->
         <div class="icon-menu"></div>
         <ul class="navbar">
-          <li class="tab" data-content="work-items"><a href="#" class="icon-home"> Work Experience</a></li>
+          <li class="tab" data-content="work-items"><a href="#" class="icon-home"> Work</a></li>
           <li class="tab" data-content="about"><a href="#about" class="icon-address-book"> About</a></li>
           <li><a href="http://linkedin.com/in/umabangalore" target="_blank" class="icon-linkedin">LinkedIn</a></li>
           <li><a href="http://twitter.com/UmaBangalore" target="_blank" class="icon-twitter3">Twitter</a></li>
@@ -70,8 +76,11 @@
         </section>
       </section>
     </main>
-    <footer>
+    <footer class="site-footer">
       &copy; Uma Bangalore | uma_bangalore@hotmail.com | 425.442.9602 (m)
+      <section id="random-fact" class="random-fact">
+        <!-- place holder for random facts data rendered by handlebars -->
+      </section>
     </footer>
 
     <!-- all scripts -->
