@@ -2,6 +2,14 @@ h1 {
     margin-bottom: -0.2em;
 }
 
-.main-nav {
+/*.main-nav {
   margin-left: -2.2em;
+}*/
+
+.line-break {
+  text-align: center;
+  height: 1px;
+  background-color: #cecece;
+  margin-top:15px;
+  margin-bottom: 10px;
 }

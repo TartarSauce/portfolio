@@ -8,4 +8,18 @@ portfolioView.handleMainNav = function () {
   });
 };
 
-portfolioView.handleMainNav();
+portfolioView.randomFacts = function() {
+  var template = Handlebars.compile($('#randomfact-template').html());
+  $('#random-fact').append(template({numWords: Work.numWordsAll()}));
+  console.log(Work.numWordsAll());
+};
+
+portfolioView.renderPage = function() {
+  Work.all.map(function(workItem) {
+    $('#work-items').append(workItem.toHtml('#workitems-template'));
+  });
+  portfolioView.handleMainNav();
+  portfolioView.randomFacts();
+};
+
+Work.fetchAll(portfolioView.renderPage);
