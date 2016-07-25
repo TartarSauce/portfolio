@@ -26,7 +26,7 @@
       Work.loadAll(JSON.parse(localStorage.data));
       nextFunction();
     } else {
-      $.getJSON('scripts/data.json', function(responseData) {
+      $.getJSON('model/data.json', function(responseData) {
         localStorage.data = JSON.stringify(responseData);
         Work.loadAll(responseData);
         nextFunction();
