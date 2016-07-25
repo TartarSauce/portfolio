@@ -24,14 +24,14 @@
 
     <!-- 'fun fact about this page' template definition start -->
     <script id="randomfact-template" type="text/x-handlebars-template">
-      <p>random fact: appx. {{numWords}} words are on this page!</p>
+      <p>random fact: appx. {{numWords}} words are on this portfolio site!</p>
     </script>
     <!-- 'fun fact about this page' template definition start -->
 
     <!-- all css links -->
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="styles/icon.css"> -->
+    <link rel="stylesheet" href="styles/icon.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
@@ -47,7 +47,7 @@
         <ul class="navbar">
           <li class="tab" data-content="work-items"><a href="#" class="icon-home"> Work</a></li>
           <li class="tab" data-content="about"><a href="#about" class="icon-address-book"> About</a></li>
-          <li><a href="http://linkedin.com/in/umabangalore" target="_blank" class="icon-linkedin">LinkedIn</a></li>
+          <li><a href="http://linkedin.com/in/umabangalore" target="_blank" class="icon-link">LinkedIn</a></li>
           <li><a href="http://twitter.com/UmaBangalore" target="_blank" class="icon-twitter3">Twitter</a></li>
           <li><a href="https://github.com/TartarSauce" target="_blank" class="icon-github">Github</a></li>
         </ul>
@@ -60,20 +60,20 @@
       <section id="work-items" class="tab-content">
         <!-- template item goes here -->
       </section>
-
       <!-- about me -->
       <section id="about" class="tab-content">
         <header>
-          <h1>Welcome to my Blog</h1>
+          <h3>Welcome to my Blog</h3>
         </header>
         <section>
-          <h3>Some of my interests:</h3>
+          <h6>Some of my interests:</h6>
           <ul class="interests">
             <li>Coding</li>
             <li>Sharing what I've learned</li>
             <li>Hanging out with my family</li>
           </ul>
         </section>
+        <div class="line-break"> </div>
       </section>
     </main>
     <footer class="site-footer">
@@ -86,8 +86,7 @@
     <!-- all scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <!-- <script src="scripts/data.js"></script> -->
-    <script src="scripts/portfolio.js"></script>
-    <script src="scripts/portfolioView.js"></script>
+    <script src="controller/portfolio.js"></script>
+    <script src="view/portfolioView.js"></script>
   </body>
 </html>
