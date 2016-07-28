@@ -3,6 +3,7 @@
 
   workController.reveal = function() {
     $('#about').hide();
+    $('#repos').hide();
     $('#work-items').fadeIn();
   };
 
