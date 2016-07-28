@@ -1,12 +1,13 @@
 {
-  "name": "uma-portfolio-class-13",
+  "name": "uma-portfolio",
   "version": "1.0.0",
-  "description": "portfolio will be hosted on heroku now!",
+  "description": "portfolio on heroku",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0",
-    "express-request-proxy": "^2.0.0"
+    "express-request-proxy": "^2.0.0",
+    "express": "^4.14.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
