@@ -1,10 +1,15 @@
 {
-  "name": "uma-portfolio",
+  "name": "uma-portfolio-class-13",
   "version": "1.0.0",
-  "description": "portfolio gets the spa route",
+  "description": "portfolio will be hosted on heroku now!",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-request-proxy": "^2.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -16,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/TartarSauce/portfolio/issues"
   },
-  "homepage": "https://github.com/TartarSauce/portfolio#readme",
-  "dependencies": {
-    "express": "^4.14.0"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/TartarSauce/portfolio#readme"
 }
