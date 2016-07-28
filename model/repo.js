@@ -14,7 +14,6 @@
       },
       success: function(data, message, xhr) {
         reposObj.allRepos = data;
-        console.log(data);
         nextFunction();
       }
     });
@@ -22,6 +21,7 @@
 
   reposObj.withTheAttribute = function(myAttr) {
     return reposObj.allRepos.filter(function(aRepo) {
+      console.log(aRepo[myAttr]);
       return aRepo[myAttr];
     });
   };

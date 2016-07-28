@@ -4,6 +4,8 @@
   var repoCompiler = function(data) {
     var source = $('#repo-template').html();
     var template = Handlebars.compile(source);
+    console.log(data);
+    console.log(template(data));
     return template(data);
   };  // Finish the Handlebars method here!
 
